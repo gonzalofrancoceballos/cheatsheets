@@ -13,3 +13,11 @@ ssh-add ~/.ssh/id_rsa
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
+
+- SSH into maching porting keys:
+```bash
+ssh-add -K ~/.ssh/id_rsa
+ssh -A user@xxx.xxx.xxx.xxx
+```
+
+
