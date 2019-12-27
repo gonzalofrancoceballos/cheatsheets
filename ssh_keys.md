@@ -20,4 +20,9 @@ ssh-add -K ~/.ssh/id_rsa
 ssh -A user@xxx.xxx.xxx.xxx
 ```
 
-
+- On Mac OS, using Visual Studio Code, add  the following lines to `~/.ssh/config`:
+```bash
+Host *
+   AddKeysToAgent yes
+   UseKeychain yes 
+```
