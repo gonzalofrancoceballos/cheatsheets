@@ -1,4 +1,4 @@
-### Create conda environment
+### Python environment
 
 - Create new environment
 ```bash
@@ -16,3 +16,30 @@ pip install -r /path/to/project/requirements.txt
 pip install ipykernel
 python -m ipykernel install --user --name=my_env_name --display-name "Python (my_env_name)"
 ```
+
+
+### R environment
+
+- Create new environment
+```bash
+conda create -n my_env_name
+```
+
+- Install R essentials. They include all necessary dependencies to launch a jupyter notebook:
+```bash
+conda install -c r r-essentials 
+conda install -c conda-forge r-lightgbm 
+conda install -c conda-forge r-catboost 
+```
+
+- Install main libraries using `conda install`:
+```bash
+conda install -c r r-essentials 
+conda install -c conda-forge r-lightgbm 
+conda install -c conda-forge r-catboost 
+```
+- Some packajes need to be installed from directly inside of `R`
+```R
+install.packages('prophet', type="source")
+```
+
