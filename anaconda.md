@@ -28,13 +28,10 @@ conda create -n my_env_name
 - Install R essentials. They include all necessary dependencies to launch a jupyter notebook:
 ```bash
 conda install -c r r-essentials 
-conda install -c conda-forge r-lightgbm 
-conda install -c conda-forge r-catboost 
 ```
 
 - Install main libraries using `conda install`:
 ```bash
-conda install -c r r-essentials 
 conda install -c conda-forge r-lightgbm 
 conda install -c conda-forge r-catboost 
 ```
