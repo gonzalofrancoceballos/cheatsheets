@@ -17,7 +17,7 @@ pip install ipykernel
 python -m ipykernel install --user --name=my_env_name --display-name "Python (my_env_name)"
 ```
 
-- To remove environment from Jypyter
+- To remove environment from Jupyter
 ```bash
 jupyter kernelspec uninstall my_env_name
 ```
